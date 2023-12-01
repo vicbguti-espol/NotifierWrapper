@@ -4,11 +4,17 @@
  */
 package notifiers.decorators;
 
+import notifiers.Notifier;
+
 /**
  *
  * @author vicbguti
  */
 public class TelegramDecorator extends BaseDecorator {
+
+    public TelegramDecorator(Notifier wrapeeNotifier) {
+        super(wrapeeNotifier);
+    }
     @Override
     public void sendNotification(){
        sendTelegramNotification(); 

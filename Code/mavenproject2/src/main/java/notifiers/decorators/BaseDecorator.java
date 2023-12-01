@@ -13,7 +13,7 @@ import notifiers.Notifier;
 public class BaseDecorator implements Notifier{
     Notifier wrapeeNotifier;
 
-    BaseDecorator(Notifier wrapeeNotifier){
+    public BaseDecorator(Notifier wrapeeNotifier){
         this.wrapeeNotifier = wrapeeNotifier;
     }
     

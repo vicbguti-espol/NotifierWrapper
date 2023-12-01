@@ -4,11 +4,17 @@
  */
 package notifiers.decorators;
 
+import notifiers.Notifier;
+
 /**
  *
  * @author vicbguti
  */
 public class SignalDecorator extends BaseDecorator {
+
+    public SignalDecorator(Notifier wrapeeNotifier) {
+        super(wrapeeNotifier);
+    }
     @Override
     public void sendNotification(){
        sendSignalNotification(); 

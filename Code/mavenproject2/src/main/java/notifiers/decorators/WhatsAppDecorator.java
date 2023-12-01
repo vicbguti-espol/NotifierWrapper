@@ -4,11 +4,17 @@
  */
 package notifiers.decorators;
 
+import notifiers.Notifier;
+
 /**
  *
  * @author vicbguti
  */
 public class WhatsAppDecorator extends BaseDecorator {
+
+    public WhatsAppDecorator(Notifier wrapeeNotifier) {
+        super(wrapeeNotifier);
+    }
     @Override
     public void sendNotification(){
        sendWhatsAppNotification(); 
